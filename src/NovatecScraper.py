@@ -9,7 +9,7 @@ class NovatecScraper:
     URL = "https://novatec.com.br/lista.php?id=3"
     REGEX_BOOK = re.compile(r"livros/")
     REGEX_AUTHOR = re.compile(r"autores/")
-    REGEX_YEAR = re.compile(r"\b(\d{4})\b")
+    REGEX_YEAR = re.compile(r"Ano: \d{4}")
     REGEX_PAGES = re.compile(r"Páginas:\s*(\d+)")
     REGEX_PRICE = re.compile(r"Preço:\s*R\$\s*(\d+,\d{2})")
 
@@ -53,7 +53,8 @@ class NovatecScraper:
             all_pages.append(re.findall(self.REGEX_PAGES, font.text)[0])
             all_prices.append(re.findall(self.REGEX_PRICE, font.text)[0])
 
-        for i in range(1, 10):
+        for i in range(0, 10):
             self.books.append(Book(all_titles[i], all_authors[i], all_years[i], all_pages[i], all_prices[i]))
 
-        print(self.books)
+        for book in self.books:
+            print(book.__repr__())
