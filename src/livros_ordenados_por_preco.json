@@ -1,0 +1,72 @@
+[
+    {
+        "titulo": "Inteligência Artificial na Educação Básica",
+        "autor": "Rosa Maria Vicari",
+        "ano": "2023",
+        "paginas": "168",
+        "preco": "59,00"
+    },
+    {
+        "titulo": "Como a Inteligência Artificial Funciona",
+        "autor": "Ronald T. Kneusel",
+        "ano": "2024",
+        "paginas": "256",
+        "preco": "79,00"
+    },
+    {
+        "titulo": "Implementando o Data Mesh",
+        "autor": "Jean-Georges Perrin",
+        "ano": "2025",
+        "paginas": "256",
+        "preco": "89,00"
+    },
+    {
+        "titulo": "Engenharia de Software para Cientistas de Dados",
+        "autor": "Catherine Nelson",
+        "ano": "2024",
+        "paginas": "288",
+        "preco": "93,00"
+    },
+    {
+        "titulo": "Decifrando Arquiteturas de Dados",
+        "autor": "James Serra",
+        "ano": "2024",
+        "paginas": "296",
+        "preco": "95,00"
+    },
+    {
+        "titulo": "Curso Intensivo de MySQL",
+        "autor": "Rick Silva",
+        "ano": "2023",
+        "paginas": "360",
+        "preco": "95,00"
+    },
+    {
+        "titulo": "Estruturas de Dados e Algoritmos com Python",
+        "autor": "Basant Agarwal",
+        "ano": "2023",
+        "paginas": "464",
+        "preco": "116,00"
+    },
+    {
+        "titulo": "Web Scraping com Python - 3ª Edição",
+        "autor": "Ryan Mitchell",
+        "ano": "2024",
+        "paginas": "384",
+        "preco": "129,00"
+    },
+    {
+        "titulo": "Python para Bioinformática",
+        "autor": "Diego Mariano",
+        "ano": "2025",
+        "paginas": "576",
+        "preco": "139,00"
+    },
+    {
+        "titulo": "Fundamentos de Engenharia de Dados",
+        "autor": "Joe Reis",
+        "ano": "2023",
+        "paginas": "528",
+        "preco": "165,00"
+    }
+]
