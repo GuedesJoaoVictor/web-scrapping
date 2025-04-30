@@ -72,6 +72,7 @@ def user_selecton(books):
             print(f"Preço:   R$ {book.preco}")
             print("-" * 50)
         print()
+        input("Pressione ENTER para continuar...")
 
 
 if __name__ == '__main__':
