@@ -56,13 +56,12 @@ class NovatecScraper:
         for font in font_from_link:
             font.find_all("a", {"href": self.REGEX_AUTHOR})
             all_authors.append(font.find_all("a", {"href": self.REGEX_AUTHOR})[0].text)
-            all_years.append(re.findall(self.REGEX_YEAR, font.text)[0])
+            year = re.findall(self.REGEX_YEAR, font.text)
+            year = re.sub(r"Ano: ", "", year[0])
+            all_years.append(year)
             all_pages.append(re.findall(self.REGEX_PAGES, font.text)[0])
             all_prices.append(re.findall(self.REGEX_PRICE, font.text)[0])
 
         # Criamos os livros utilizando classe Book.
         for i in range(0, 10):
             self.books.append(Book(all_titles[i], all_authors[i], all_years[i], all_pages[i], all_prices[i]))
-
-        for book in self.books:
-            print(book.__repr__())
